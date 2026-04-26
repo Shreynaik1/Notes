@@ -11,10 +11,16 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: process.env.FRONTEND_URL || '*', // Fallback to * for debugging, but recommend setting FRONTEND_URL
     credentials: true
 }));
 app.use(express.json());
+
+// Debugging: Log configuration on startup
+console.log('Environment Check:');
+console.log('- MONGODB_URI:', process.env.MONGODB_URI ? '✅ Set' : '❌ NOT SET');
+console.log('- JWT_SECRET:', process.env.JWT_SECRET ? '✅ Set' : '❌ NOT SET');
+console.log('- FRONTEND_URL:', process.env.FRONTEND_URL || 'Not Set (using *)');
 
 // Database Connection
 mongoose.connect(process.env.MONGODB_URI)
