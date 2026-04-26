@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
 
     const fetchUser = async () => {
         try {
-            const res = await axios.get('http://localhost:5000/api/auth/user');
+            const res = await axios.get('/api/auth/user');
             setUser(res.data);
         } catch (err) {
             console.error('Failed to fetch user', err);
@@ -36,14 +36,14 @@ export const AuthProvider = ({ children }) => {
     };
 
     const login = async (email, password) => {
-        const res = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+        const res = await axios.post('/api/auth/login', { email, password });
         setToken(res.data.token);
         setUser(res.data.user);
         return res.data;
     };
 
     const signup = async (name, email, password) => {
-        const res = await axios.post('http://localhost:5000/api/auth/signup', { name, email, password });
+        const res = await axios.post('/api/auth/signup', { name, email, password });
         setToken(res.data.token);
         setUser(res.data.user);
         return res.data;

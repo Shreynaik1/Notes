@@ -33,6 +33,11 @@ const noteRoutes = require('./routes/noteRoutes');
 app.use('/api/auth', authRoutes);
 app.use('/api/notes', noteRoutes);
 
-app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
+// Export for Vercel
+module.exports = app;
+
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log(`🚀 Server running on http://localhost:${PORT}`);
+    });
+}

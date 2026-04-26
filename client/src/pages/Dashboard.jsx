@@ -21,7 +21,7 @@ const Dashboard = () => {
 
     const fetchNotes = async () => {
         try {
-            const res = await axios.get('http://localhost:5000/api/notes');
+            const res = await axios.get('/api/notes');
             setNotes(res.data);
         } catch (err) {
             toast.error('Failed to fetch notes');
@@ -38,7 +38,7 @@ const Dashboard = () => {
             return;
         }
         try {
-            const res = await axios.get(`http://localhost:5000/api/notes/search?query=${query}`);
+            const res = await axios.get(`/api/notes/search?query=${query}`);
             setNotes(res.data);
         } catch (err) {
             console.error(err);
@@ -48,11 +48,11 @@ const Dashboard = () => {
     const handleSaveNote = async (noteData) => {
         try {
             if (editingNote) {
-                const res = await axios.put(`http://localhost:5000/api/notes/${editingNote._id}`, noteData);
+                const res = await axios.put(`/api/notes/${editingNote._id}`, noteData);
                 setNotes(notes.map(n => n._id === editingNote._id ? res.data : n));
                 toast.success('Note updated');
             } else {
-                const res = await axios.post('http://localhost:5000/api/notes', noteData);
+                const res = await axios.post('/api/notes', noteData);
                 setNotes([res.data, ...notes]);
                 toast.success('Note created');
             }
@@ -66,7 +66,7 @@ const Dashboard = () => {
     const handleDeleteNote = async (id) => {
         if (!window.confirm('Are you sure you want to delete this note?')) return;
         try {
-            await axios.delete(`http://localhost:5000/api/notes/${id}`);
+            await axios.delete(`/api/notes/${id}`);
             setNotes(notes.filter(n => n._id !== id));
             toast.success('Note deleted');
         } catch (err) {
@@ -76,7 +76,7 @@ const Dashboard = () => {
 
     const handleTogglePin = async (id) => {
         try {
-            const res = await axios.patch(`http://localhost:5000/api/notes/${id}/pin`);
+            const res = await axios.patch(`/api/notes/${id}/pin`);
             setNotes(notes.map(n => n._id === id ? res.data : n));
         } catch (err) {
             toast.error('Error toggling pin');
@@ -85,7 +85,7 @@ const Dashboard = () => {
 
     const handleToggleImportant = async (id) => {
         try {
-            const res = await axios.patch(`http://localhost:5000/api/notes/${id}/important`);
+            const res = await axios.patch(`/api/notes/${id}/important`);
             setNotes(notes.map(n => n._id === id ? res.data : n));
         } catch (err) {
             toast.error('Error toggling importance');
