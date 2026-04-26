@@ -39,6 +39,10 @@ const noteRoutes = require('./routes/noteRoutes');
 app.use('/api/auth', authRoutes);
 app.use('/api/notes', noteRoutes);
 
+// Fallback routes for when the backend is deployed separately as a root service
+app.use('/auth', authRoutes);
+app.use('/notes', noteRoutes);
+
 // Export for Vercel
 module.exports = app;
 
