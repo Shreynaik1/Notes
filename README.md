@@ -101,15 +101,27 @@ Backend: Render
 
 ## Screenshots
 
-<img width="1918" height="852" alt="Screenshot 2026-04-27 114658" src="https://github.com/user-attachments/assets/5d4d8980-cd2d-4c71-9eee-06383106279d" />
-<img width="1890" height="842" alt="Screenshot 2026-04-26 083756" src="https://github.com/user-attachments/assets/087c30f6-b425-4307-9b6f-d3535df2289d" />
-<img width="1902" height="848" alt="Screenshot 2026-04-26 083549" src="https://github.com/user-attachments/assets/30161d14-2964-45f2-a9b2-250de9b98da3" />
-<img width="1903" height="862" alt="Screenshot 2026-04-26 083519" src="https://github.com/user-attachments/assets/7a254c69-0fd6-4ebe-a999-d8b3bf210f91" />
-<img width="1906" height="866" alt="Screenshot 2026-04-26 083440" src="https://github.com/user-attachments/assets/2ddfe286-7eab-49cc-905e-1865a11abe26" />
-<img width="1916" height="853" alt="Screenshot 2026-04-27 114711" src="https://github.com/user-attachments/assets/3da22418-e703-49bd-a3cf-4b52e90e6632" />
+<img src="https://github.com/user-attachments/assets/5d4d8980-cd2d-4c71-9eee-06383106279d" width="100%" />
 
+<br/><br/>
 
+<img src="https://github.com/user-attachments/assets/087c30f6-b425-4307-9b6f-d3535df2289d" width="100%" />
 
+<br/><br/>
+
+<img src="https://github.com/user-attachments/assets/30161d14-2964-45f2-a9b2-250de9b98da3" width="100%" />
+
+<br/><br/>
+
+<img src="https://github.com/user-attachments/assets/7a254c69-0fd6-4ebe-a999-d8b3bf210f91" width="100%" />
+
+<br/><br/>
+
+<img src="https://github.com/user-attachments/assets/2ddfe286-7eab-49cc-905e-1865a11abe26" width="100%" />
+
+<br/><br/>
+
+<img src="https://github.com/user-attachments/assets/3da22418-e703-49bd-a3cf-4b52e90e6632" width="100%" />
 
 ---
 
