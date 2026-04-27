@@ -21,7 +21,7 @@ const NoteCard = ({ note, onEdit, onDelete, onPin, onImportant }) => {
                         {note.updatedAt ? format(new Date(note.updatedAt), 'MMM dd, yyyy') : 'Just now'}
                     </p>
                 </div>
-                <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="flex items-center gap-1 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
                     <button 
                         onClick={() => onPin(note._id)}
                         className={`p-2 rounded-lg transition-colors ${note.isPinned ? 'text-primary-600 bg-primary-50 dark:bg-primary-900/20' : 'text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
@@ -49,7 +49,7 @@ const NoteCard = ({ note, onEdit, onDelete, onPin, onImportant }) => {
                         </span>
                     ))}
                 </div>
-                <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="flex items-center gap-1 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
                     <button 
                         onClick={() => onEdit(note)}
                         className="p-2 text-slate-400 hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20 rounded-lg transition-colors"

@@ -111,7 +111,7 @@ const Dashboard = () => {
                 }}
             />
 
-            <main className="flex-1 ml-64 p-8">
+            <main className="flex-1 lg:ml-64 p-4 sm:p-6 lg:p-8 pt-16 sm:pt-16 lg:pt-8">
                 {/* Header */}
                 <div className="max-w-6xl mx-auto mb-10">
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
