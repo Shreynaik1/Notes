@@ -2,7 +2,9 @@
 
 A full-stack Notes Application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application allows users to securely create, manage, and search notes with a clean and responsive interface.
 
-Live Demo: https://notes-31ls.vercel.app/<img width="1916" height="853" alt="Screenshot 2026-04-27 114711" src="https://github.com/user-attachments/assets/8d93ff74-c8c3-41e6-b568-234b55d3d9ab" />
+Live Demo: https://notes-31ls.vercel.app/
+
+<img width="1916" height="853" alt="Screenshot 2026-04-27 114711" src="https://github.com/user-attachments/assets/8d93ff74-c8c3-41e6-b568-234b55d3d9ab" />
 
 
 ---
